@@ -1,0 +1,37 @@
+
+Object/Relation Mapping (ORM)
+
+特点:
+高性能
+易使用
+数据库加密
+核心library体积小
+内存消耗低
+开源社区
+文档详细
+
+
+在gradle文件中配置GreenDao
+
+在project gradle:
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        /*配置1*/
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.2.1'
+    }
+}
+
+在app gradle:
+
+/*配置2*/
+apply plugin: 'org.greenrobot.greendao'
+
+dependencies {
+    /*配置3*/
+    compile 'org.greenrobot:greendao:3.2.0'
+}
